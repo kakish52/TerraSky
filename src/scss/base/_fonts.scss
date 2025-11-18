@@ -1,0 +1,16 @@
+//@font-face {
+//  font-family: "Poppins";
+//  src: url("../../assets/fonts/Poppins-Medium.woff2") format("woff2");
+//
+//}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Medium.woff2") format("woff2"),
+  url("../../assets/fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url("../../assets/fonts/Montserrat-Bold.woff2") format("woff2"),
+  url("../../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+

@@ -1,0 +1,25 @@
+:root{
+
+  /**  Отступы  */
+  --gap-xl: 20px;
+  --gap-l: 15px;
+
+  --padding-block: 20px;
+  --padding-inline: 20px;
+
+  /**  Скругления углов  */
+  --border-radius-default: 20px;
+
+  /**  Основные цвета */
+  --main-color: #FFFFFF;
+  --primary-color: #B88E2F;
+  --secondary-color: black;
+  --text-color: gray;
+  --section_rooms-color: #FCF8F3;
+  --button_color: #F9F1E7;
+  --text_gray_color: #9F9F9F;
+
+  /**  Шрифты */
+  --font-family-logo: 'Montserrat-bold', sans-serif;
+  --font-family-main: "Poppins", sans-serif;
+}
