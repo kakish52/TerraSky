@@ -1,0 +1,26 @@
+
+.slider {
+  display: flex;
+  gap: 95px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.slider::-webkit-scrollbar {
+  height: 10px;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+
+.slide {
+    flex: 0 0 20%;     
+    scroll-snap-align: center;
+}
+

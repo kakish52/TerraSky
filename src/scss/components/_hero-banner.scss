@@ -1,0 +1,18 @@
+.greeting{
+    
+    display: grid;
+    align-items: center;    
+    justify-items: center; 
+    height: 300px;
+    .greeting_text{
+    font-family: "Blinker", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    color: var(--primary-color);
+    }
+    .block_buttons{
+        display: flex;
+        gap: 5px;
+    }
+}

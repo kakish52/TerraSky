@@ -11,8 +11,17 @@
 // ==== 4. Components ====
 @use 'components/button';
 @use 'components/header';
+@use 'components/index';
+@use 'components/hero-banner';
+@use 'components/card';
+@use 'components/slider';
+@use 'components/advantages';
+@use 'components/review';
 
 body {
   background-color: var(--main-color);
-  font-family: var(--font-family-main);
+  font-family: var(--font-family-text);
+  overflow-x:hidden;
+  margin-left: 100px;
+  margin-right: 100px;
 }

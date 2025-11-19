@@ -1,0 +1,23 @@
+.card{
+    width: 350px;
+    height: 423px;
+    .card_description{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .info_card{
+        width: 276px;
+        .h_card{
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 32px;
+        }
+        
+        }  
+    }
+    
+
+}

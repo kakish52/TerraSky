@@ -1,0 +1,33 @@
+.popular_tours{
+    display: grid;
+    align-items: center;    
+    justify-items: center; 
+}
+
+.h{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+.gallary{
+    margin: 100px;
+    gap: 90px;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    .gallary_h{
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    }
+    .gallary_flex{
+        display: flex;
+        gap: 40px;
+    }
+    .gallary_grid{
+        display: grid;
+        gap: 46px;
+    }
+}

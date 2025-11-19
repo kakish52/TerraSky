@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    
+    align-items: center; 
+    color: var(--primary-color);
+    .navigation{
+        display: flex;
+        gap: 77px;
+        align-items: center; 
+        .about_us{
+        display: flex;
+        align-items: center; 
+        gap: 20px;
+        }
+        .contacts{
+            display: flex;
+            align-items: center; 
+            gap: 20px;
+        }
+    }
+}
