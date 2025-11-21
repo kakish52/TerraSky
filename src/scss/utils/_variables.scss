@@ -25,3 +25,28 @@
   // --font-family-H: "PlayfairDisplay", sans-serif;
   // --font-family-bold: "Blinker", sans-serif;
 }
+:root[data-theme="light"] {
+  --main-color: #FFFFFF;
+  --primary-color: #009FE3;
+  --secondary-color: #F4951D;
+  --text-color: gray;
+  --section_rooms-color: #FCF8F3;
+  --button_color: #F9F1E7;
+  --black-color: black;
+  --text_gray_color: #9F9F9F;
+  --block_color: #f7f9fc;
+  --slide-color: rgb(167, 167, 167);
+}
+
+:root[data-theme="dark"] {
+  --main-color: #181818;
+  --primary-color: #4db3ff;
+  --secondary-color: #ffb455;
+  --text-color: #cccccc;
+  --section_rooms-color: #222222;
+  --button_color: #333333;
+  --black-color: white;
+  --text_gray_color: #bbbbbb;
+  --block_color: #222222;
+  --slide-color: rgb(167, 167, 167);
+}

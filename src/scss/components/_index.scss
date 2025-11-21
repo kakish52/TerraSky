@@ -4,6 +4,7 @@ body {
   overflow-x:hidden;
   margin-left: 100px;
   margin-right: 100px;
+  color: var(--black-color);
 }
 .block_popular_tours{
     margin-top: 170px;
@@ -21,12 +22,9 @@ body {
     }
 
 .h{
-    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 700;
     font-size: 40px;
-    
 }
 .gallary{
     margin: 100px;

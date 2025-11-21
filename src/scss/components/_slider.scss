@@ -7,7 +7,8 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  margin-top: 100px;
+  margin-top: 60px;
+  padding-bottom: 35px;
 }
 
 
@@ -15,8 +16,9 @@
   height: 10px;
 }
 .slider::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.2);
+  background: var(--slide-color);
   border-radius: 4px;
+  
 }
 
 
