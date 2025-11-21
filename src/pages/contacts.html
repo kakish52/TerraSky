@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>TerraSkyContacts</title>
+</head>
+<body>
+@@include('../components/_header.html')
+<section class="contact-hero">
+        <h1>Свяжитесь с нами</h1>
+        <p>Мы всегда рады помочь вам в выборе тура и ответить на любые вопросы. Напишите нам или приходите в наш офис.</p>
+</section>
+
+<section class="contact-wrapper">
+    <div class="contact-info">
+        <h2>Контактная информация</h2>
+        <p><span class="label">Адрес:</span> Нижний Новгород, Московское шоссе, 1</p>
+        <p><span class="label">Телефон:</span> +7 (831) 218-22-12</p>
+        <p><span class="label">Email:</span> terrasky@mail.ru</p>
+        <p><span class="label">Время работы:</span> Пн‑Пт: 10:00–22:00</p>
+        @@include('../components/_form-contact.html')
+    </div>
+    <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9365885b89e5e333f1a5ba180e33327af7356caef057473f7d9bfe853fd832ee&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+</section>
+@@include('../components/_footer.html')
+</body>
+</html>

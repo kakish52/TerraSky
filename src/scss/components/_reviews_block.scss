@@ -1,0 +1,110 @@
+.reviews-block{
+    display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.reviews-carousel{
+  position: relative;
+  align-items: center;
+  width: 520px;
+  height: 310px;
+  overflow: hidden;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.reviews-track{
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.review-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+
+#review1:checked ~ .reviews-track { 
+  transform: translateX(0);
+}
+#review2:checked ~ .reviews-track {
+  transform: translateX(-100%);
+}
+#review3:checked ~ .reviews-track {
+  transform: translateX(-200%);
+}
+#review4:checked ~ .reviews-track {
+  transform: translateX(-300%); 
+}
+
+.carousel-controls label {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  display: none;
+}
+
+
+.carousel-prev {
+  left: 20px;
+}
+.carousel-prev::before {
+  content: "◀";
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.carousel-next {
+  right: 15px;
+}
+.carousel-next::before {
+  content: "▶";
+  color: var(--primary-color);
+  font-size: 24px;
+}
+#review1:checked ~ .carousel-controls label:nth-child(1),
+#review1:checked ~ .carousel-controls label:nth-child(2) {
+  display: block; 
+}
+#review2:checked ~ .carousel-controls label:nth-child(3),
+#review2:checked ~ .carousel-controls label:nth-child(4) {
+  display: block; 
+}
+#review3:checked ~ .carousel-controls label:nth-child(5),
+#review3:checked ~ .carousel-controls label:nth-child(6) {
+  display: block; 
+}
+#review4:checked ~ .carousel-controls label:nth-child(7),
+#review4:checked ~ .carousel-controls label:nth-child(8) {
+  display: block;
+}
+.make-review{
+    font-size: 20px;
+    display: grid;
+    gap: 20px;
+    font-style: italic;
+}
+
+
+@media (max-width: 510px) {
+    .reviews-carousel {
+        width: 410px;
+        height: 300px;
+    }
+    .review {
+        width: 390px;
+        height: 280px;
+    }
+    .review .text_review {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}

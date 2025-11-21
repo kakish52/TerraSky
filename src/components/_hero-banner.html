@@ -1,58 +1,24 @@
-<div class="greeting"> 
-    <span class="greeting_text">Вас ждет отпуск вашей мечты!</span>
-    <div class="block_buttons">
-        @@include('../components/_hero-banner-button.html', {
-                "border-radius": "15px 0px 0px 15px",
-                "title": "Тур",
-                "color": "var(--secondary-color)"
-            })
-        @@include('../components/_hero-banner-button.html', {
-                "border-radius": "0px",
-                "title": "Отель",
-                "color": "var(--secondary-color)"
-            })
-        @@include('../components/_hero-banner-button.html', {
-                "border-radius": "0px 15px 15px 0px",
-                "title": "Любимое",
-                "color": "var(--secondary-color)"
-            })
-        
-    </div>
-    <div class="block_buttons">
-        @@include('../components/_hero-banner-button.html', {
-                "border-radius": "15px 0px 0px 15px",
-                "title": "Откуда",
-                "color": "var(--primary-color)"
-            })
-        @@include('../components/_hero-banner-button.html', {
-                "title": "Куда",
-                "color": "var(--primary-color)"
-            })
-         @@include('../components/_hero-banner-button.html', {
-                "title": "Когда",
-                "color": "var(--primary-color)"
-            })
-         @@include('../components/_hero-banner-button.html', {
-                "title": "Обратно",
-                "color": "var(--primary-color)"
-            })
-        @@include('../components/_hero-banner-button.html', {
-                "border-radius": "0px 15px 15px 0px",
-                "title": "Пассажир",
-                "color": "var(--primary-color)"
-            })
-        <div class="button_enter">
-        @@include('../components/_button.html', {
+<section class="hero-banner">
+    <div class="content">
+        <h1 class="title">
+            Путешествуйте с <span>ТерраСкай</span></h1>
+
+        <p>Создаем уникальные туры по всему миру — легко, красиво и вдохновляюще.</p>
+
+        <a href="#tour" >@@include('../components/_button.html', {
                 "border-radius": "15px",
-                "width": "200px",
-                "height": "60px",
-                "title": "Найти тур",
+                "width": "320px",
+                "height": "70px",
+                "title": "Подобрать тур",
                 "color": "var(--secondary-color)",
-                "font-size": "16px",
+                "font-size": "20px",
                 "font-weight": "700",
                 "text-color": "var(--main-color)",
                 "border": "0px"
-            })
-        </div>
-    </div>
-</div>
+            })</a>
+  </div>
+  <div class="hero-banner">
+        <img src="../../assets/images/hero_img.webp">
+  </div>
+
+</section>

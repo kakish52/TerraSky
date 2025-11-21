@@ -1,0 +1,29 @@
+.form-contact{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        #text{
+            padding:14px 18px;
+            font-size:16px;
+            border-radius:10px;
+            border:2px solid var(--primary-color);
+            outline:none;
+        }
+        #message{
+            padding:14px 18px;
+            font-size:16px;
+            border-radius:10px;
+            border:2px solid var(--primary-color);
+            outline:none;
+            min-height:140px;
+        }
+        #submit{
+            padding:14px 32px;
+            font-size:18px;
+            border-radius:30px;
+            border:none;
+            background:var(--secondary-color);
+            color:var(--main-color);
+            cursor:pointer;
+        }
+    }

@@ -1,18 +1,68 @@
-.greeting{
-    
-    display: grid;
-    align-items: center;    
-    justify-items: center; 
-    height: 300px;
-    .greeting_text{
-    font-family: "Blinker", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 48px;
-    color: var(--primary-color);
+.hero-banner {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--black-color);
+    .content {
+        max-width: 600px;
+        animation: fadeIn 1.2s ease forwards;
+        .title {
+            font-size: 64px;
+            line-height: 1.3;
+            font-weight: 800;
+            span{
+                color: var(--primary-color);
+            }
+        }
+        p{
+            font-size: 22px;
+            line-height: 1.5;
+        }
     }
-    .block_buttons{
-        display: flex;
-        gap: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1400px) {
+    .hero-banner{
+        display: grid;
+        .content{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-banner {
+        height: auto;
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .hero-banner .content {
+        max-width: 100%;
+    }
+
+    .hero-banner .content .title {
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    .hero-banner .content p {
+        font-size: 18px;
+    }
+
+    .hero-banner img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 }

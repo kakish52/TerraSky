@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>TerraSkyAboutUs</title>
+</head>
+<body>
+@@include('../components/_header.html')
+<section class="hero">
+    <h1>Открываем мир вместе</h1>
+    <span>ТерраСкай — это современное турагентство, которое объединяет профессионализм, технологичность и любовь к путешествиям. Мы создаем уникальные маршруты и делаем мир ближе.</span>
+</section>
+
+
+<section class="about_block" id="about">
+    <div class="about_text">
+    <h2>Кто мы?</h2>
+    <p> Мы — команда опытных тревел‑экспертов, которая уже более 10 лет помогает людям открывать новые страны и впечатления. Наша миссия — сделать ваше путешествие максимально комфортным, безопасным и ярким.
+            <br><br> Мы заботимся о каждом клиенте и подбираем маршрут, полностью соответствующий его желаниям, будь то пляжный отдых, активный туризм, экскурсии, гастрономические туры или VIP-сопровождение.
+        </p>
+    </div>
+    <div class="about_block_img"><img class="about_block_img" src="../../assets/images/AboutUs1.webp"></div>
+</section>
+
+<section class="story">
+    <h2>Наша история</h2>  
+    <p>ТерраСкай начиналась как небольшая команда энтузиастов, которые мечтали сделать путешествия доступными каждому.
+        За годы работы мы выросли в крупное турагентство, открывшее тысячи маршрутов по всему миру и помогшее людям
+        пережить самые яркие моменты своей жизни. Мы идём в ногу со временем, внедряя современные технологии и создавая
+        удобные сервисы для планирования поездок.
+    </p>
+    <div class="about_img" >
+        <img src="../../assets/images/AboutUs2.webp" >
+        <img src="../../assets/images/AboutUs3.webp" >
+        <img src="../../assets/images/AboutUs4.webp" >
+    </div>
+</section>
+
+
+<section class="mission">
+    <h2 >Наша миссия</h2>
+    <p>Мы стремимся делать путешествия простыми, комфортными и вдохновляющими. Наша цель — чтобы каждый человек мог
+    открыть для себя новые горизонты, познакомиться с культурами мира и получить незабываемые эмоции.
+    Мы не просто подбираем туры — мы создаём истории.
+    </p>
+
+    <div class="about_img" >
+        <img id="img" src="../../assets/images/AboutUs5.webp" >
+        <img id="img" src="../../assets/images/AboutUs6.webp" >
+    </div>
+</section>
+
+
+<section class="contact-form">
+    <h2>Связаться с нами</h2>
+    <p>Остались вопросы? Напишите нам — мы свяжемся с вами в ближайшее время.</p>
+    @@include('../components/_form-contact.html')
+</section>
+
+
+<div class="buttonss">
+    <a href="/index.html?id=#tour">@@include('../components/_button.html', {
+                "border-radius": "35px",
+                "width": "200px",
+                "height": "50px",
+                "title": "Подобрать тур",
+                "color": "var(--primary-color)",
+                "font-size": "16px",
+                "text-color": "var(--main-color)",
+                "border": "0px"
+            })</a>
+    <a href="/contacts.html">@@include('../components/_button.html', {
+                "border-radius": "35px",
+                "width": "200px",
+                "height": "50px",
+                "title": "Связаться с нами",
+                "color": "var(--secondary-color)",
+                "font-size": "16px",
+                "text-color": "var(--main-color)",
+                "border": "0px"
+            })</a>
+</div>
+@@include('../components/_footer.html')
+</body>
+</html>

@@ -1,0 +1,58 @@
+<div class="reviews-block">   
+    <div class="reviews-carousel">
+        <input type="radio" name="review-slide" id="review1" checked>
+        <input type="radio" name="review-slide" id="review2">
+        <input type="radio" name="review-slide" id="review3">
+        <input type="radio" name="review-slide" id="review4">
+        <div class="reviews-track">
+            <div class="review-item">
+                @@include('../components/_review.html',{
+                "title": "Анастасия",
+                "text": "Хочу поблагодарить ваше агентство за отлично организованный отдых в Испании! Всё прошло гладко: перелёт, трансфер, отель — без нареканий. Особенно порадовало внимание к деталям — от своевременных напоминаний до рекомендаций по местным достопримечательностям. Обязательно обращусь снова!"})
+            </div>
+            <div class="review-item">@@include('../components/_review.html',{
+                "title": "Алексей",
+                "text": "Тур по Франции превзошёл ожидания! Началось всё с парижских красот — Лувр, Эйфелева башня, Монмартр. Затем — винодельческие туры в Бордо и лавандовые поля Прованса. Каждый день был продуман до мелочей: от уютных отелей до дегустаций местных сыров. Особенно впечатлила гибкость гида — учёл наше желание задержаться в маленьких городках. Это был отпуск мечты!"})
+            </div>
+            <div class="review-item">@@include('../components/_review.html',{
+            "title": "Мария",
+            "text": "Отдых на Кипре оставил тёплые воспоминания: пляжи — сказка, кухня — восторг, люди — приветливые. Организация тура в целом на высоте, но были мелкие недочёты: в одном из отелей номер не соответствовал фото (меньше площадь), а экскурсия в Троодос началась на 30 минут позже. Тем не менее, мы влюбились в остров и хотим вернуться! Возможно, в следующий раз возьмём индивидуальный тур."})
+            </div>
+            <div class="review-item">
+                <div class="review">
+                    <div class="rate_name">
+                        <div class="name_reviewer">
+                            <span>Оставь свой отзыв!</span>
+                        </div>
+                    </div>
+                    <div class="text_review">
+                        <div class="make-review">
+                          <span>Поделись впечатлениями о своем отдыхе с ТерраСкай - мы всегда рады слышать ваши отзывы</span>
+                        @@include('../components/_button.html', {
+                            "border-radius": "35px",
+                            "width": "200px",
+                            "height": "50px",
+                            "title": "Оставить отзыв",
+                            "color": "var(--main-color)",
+                            "font-size": "16px",
+                            "text-color": "var(--primary-color)",
+                            "border": "1px solid var(--primary-color)"
+                        })  
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="carousel-controls">
+        <label for="review4" class="carousel-prev"></label>
+        <label for="review2" class="carousel-next"></label>
+        <label for="review1" class="carousel-prev"></label>
+        <label for="review3" class="carousel-next"></label>
+        <label for="review2" class="carousel-prev"></label>
+        <label for="review4" class="carousel-next"></label>
+        <label for="review3" class="carousel-prev"></label>
+        <label for="review1" class="carousel-next"></label>
+    </div>
+    </div>
+</div> 

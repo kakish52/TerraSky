@@ -1,0 +1,130 @@
+.hero {
+    margin-top: 100px;
+    text-align: center;
+    h1{
+    font-size: 48px;
+    color: var(--primary-color);
+    }
+    span{
+    font-size: 20px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+    display: flex;
+    }
+}
+.about_block {
+    max-width: 1100px;
+    margin: 90px auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    .about_text h2 {
+        font-size: 36px;
+        color: var(--primary-color);
+    }
+    .about_text p {
+        line-height: 1.7;
+        font-size: 18px;
+    }
+}
+.story{
+    max-width:1100px;
+    margin:90px auto;
+    h2{
+    font-size:36px;
+    color:var(--primary-color);
+    text-align:center;
+    }
+    p{
+    font-size:18px;
+    line-height:1.7;
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    }
+}
+.about_img{
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+}
+.mission{
+    max-width:1100px;
+    margin:90px auto;
+    h2{
+        font-size:36px;
+        color:var(--primary-color);
+        text-align:center;
+    }
+    p{
+        font-size:18px;
+        line-height:1.7;
+        text-align:center;
+        max-width:850px;
+        margin:0 auto;
+    }
+}
+
+
+.contact-form{
+    max-width:800px;
+    margin:50px auto;
+    h2{
+        font-size:36px;
+        color:var(--primary-color);
+        text-align:center;
+    }
+    p{
+        font-size:18px;
+        line-height:1.6;
+        text-align:center;
+    }
+    
+}
+.buttonss {
+margin-top: 40px;
+text-align: center;
+}
+@media (max-width: 1200px) {
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about_block{
+        display: grid;
+        text-align: center;
+        max-width: 700px;
+        .about_block_img{
+            margin: auto;
+        }
+    }
+    .about_img{
+        display: grid;
+        justify-content: center;
+
+    }
+}
+@media (max-width: 600px){
+    
+    .about_block{
+        text-align: center;
+        .about_block_img{
+            width: 300px;
+            height: 220px;
+            margin: auto;
+            display: none;
+        }
+    }
+    .about_img{
+        #img{
+            width: 350px;
+            height: 220px;
+        }
+    }
+    .buttonss{
+        display: grid;
+        gap: 20px;
+    }
+}
+

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>TerraSkyTour</title>
+</head>
+<body>
+
+@@include('../components/_header.html')
+<section class="tour_block_full">
+  <div class="tour_block">
+    <h2 id="tour-title" class="tour_title"></h2>
+    <img id="tour-img" class="tour_img">
+    <p id="tour-desc" class="tour_description"></p>
+
+    <div class="tour_price_block">
+      <span id="tour-price" class="price"></span>
+      <a href="#">
+            @@include('../components/_button.html', {
+                "border-radius": "35px",
+                "width": "200px",
+                "height": "50px",
+                "title": "Забронировать",
+                "color": "var(--secondary-color)",
+                "font-size": "16px",
+                "font-weight": "600",
+                "text-color": "var(--main-color)",
+                "border": "0px"
+            })</a>
+    </div>
+  </div>
+</section>
+
+<script src="../assets/js/tour-data.js"></script> 
+<script src="../assets/js/tour.js"></script>
+@@include('../components/_footer.html')
+</body>
+</html>

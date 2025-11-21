@@ -12,30 +12,42 @@
 @@include('../components/_header.html')
 @@include('../components/_hero-banner.html')
 <div class="block_popular_tours">  
-    <div class="popular_tours">
+    <div id="tour" class="popular_tours">
         <span class="h">Популярные туры</span> 
     </div>
     @@include('../components/_slider.html')
 </div> 
+<div class="advantage">
+    <span class="h">Почему мы?</span> 
 @@include('../components/_advantages.html')
+</div>
 <div class="gallary">
     <div class="gallary_h">
         <span class="h">Устройте себе приключение сегодня</span>
     </div>
      <div class="gallary_flex">
+        <div>
+            <img src="../../assets/images/gallary1.webp">
+        </div>
         <div class="div">
-            <img src="../../assets/images/gallary_photo5.webp">
+        <div class="gallary_grid">
+            <img src="../../assets/images/gallary2.webp">
+            <img src="../../assets/images/gallary5.webp">
         </div>
         <div class="gallary_grid">
-            <img src="../../assets/images/gallary_photo1.webp">
-            <img src="../../assets/images/gallary_photo4.webp">
+            <img src="../../assets/images/gallary3.webp">
+            <img src="../../assets/images/gallary4.webp">
         </div>
-        <div class="gallary_grid">
-            <img src="../../assets/images/gallary_photo3.webp">
-            <img src="../../assets/images/gallary_photo2.webp">
         </div>
      </div>
 </div>
-@@include('../components/_review.html')
+<div class="reviews-block">
+    <span class="h">Отзывы наших клиентов</span>
+    @@include('../components/_reviews_block.html')
+</div>
+@@include('../components/_footer.html')
+
 </body>
+
+
 </html>
